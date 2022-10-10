@@ -1,8 +1,8 @@
 #!/bin/bash
 
 ##### Change these values ###
-ZONE_ID="Z05563911B5TPM0CPTZND"
-SG_NAME="allow-all"
+ZONE_ID="Z04652731514ILNVOC3QC"
+SG_NAME="launch-wizard-6"
 ENV="dev"
 #############################
 
