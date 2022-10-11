@@ -9,7 +9,7 @@
         - botocore
         - boto3
     - name: Create Parameter.
-      ansible.builtin.shell: aws ssm put-parameter --name "MyStringParameter"  --type "String" --value "Vici" --overwrite
+      ansible.builtin.shell: aws ssm put-parameter --name "{{item.key}}"  --type "String" --value "{{item.value}}" --overwrite
       loop:
        - {key: "mutable.cart.dev.CATALOGUE_HOST", value: "catalogue-dev.roboshop.internal"}
        - {key: "mutable.cart.dev.REDIS_HOST", value: "redis-dev.roboshop.internal"}
